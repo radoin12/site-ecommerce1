@@ -1,0 +1,363 @@
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+.header{
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: black;
+	color: white;
+}
+
+
+.sectionnav{
+    display: flex;
+	align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+    color:white;
+   font-size: 20px;
+   font-weight: 400;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+  
+   margin: 0 1rem;
+   
+}
+/* dropdown */
+
+.drop{
+    position: relative;
+    top: 134px;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -120px;
+  
+
+   
+}
+.drop div a{
+    padding: 5px 10px;
+   background-color: blue;
+}
+.stylingdrop{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dropdown{
+   display: flex;
+ 
+
+}
+
+.dropdown:hover .drop{
+    display: flex
+}
+
+.dropdown  a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    
+  
+}
+
+
+.styleonline{
+    width: 250px;
+}
+
+
+
+
+.underline{
+ 
+    width: 0px;
+    height: 2px;
+    transition: width 1s;
+transition-timing-function: ease;
+
+}
+.additionundeline{
+    width: 150px;
+}
+.additionundeline:hover .underline{
+    background-color: blue;
+    width: 100px;
+    height: 2px;
+}
+
+
+
+.test{
+  background-color: rgb(2, 87, 172); 
+}
+
+.sectionadmin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding: 20px ;
+   
+    
+}
+
+
+
+.number{
+     display: flex;
+    align-items: center;
+    background-color: rgb(243, 78, 44);
+    justify-content: center;
+    border-radius: 50%;
+   
+    width: 30px;
+    height: 25px;
+     text-align: center;
+    color: white;
+    margin: 10px ;
+   
+}
+.sectionnav .icon{
+ font-size: 30px;
+}
+
+.additionundeline{
+    margin-left: 50px;
+}
+.homeuser{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.style-info img{
+    width: 70px;
+    height: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+    margin-left: 10px;
+    font-weight: 500;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.style-info{
+    display: flex;
+    align-items: center;
+    margin: 10px ;
+    padding-left: 35px;
+    color: white;
+}
+.style-info .name{
+    display: flex;
+  align-items: flex-start;
+
+   justify-content: "center";
+  
+ 
+ 
+   
+ 
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+ 
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.toggle-button{
+   
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        display: none;
+        justify-content: space-between;
+      
+        font-size:25px ;
+    
+}
+
+.style-info {
+    color: white;
+    position: relative;
+    top:1px;
+    left: 0;
+    margin: 10px;
+   
+}
+.header a:hover{
+   color:rgb(156, 135, 135);
+    transition: 2s;
+}
+.onlinelogo{
+    width: 300px;
+}
+
+/* responsive navbar */
+@media (max-width: 1400px) {
+    .style-info .admin{
+        padding: 0 60px;
+    }
+    .shopping{
+        width: 300px;
+    }
+    .shophome {
+       
+        width:300px;
+       }
+   
+    .homeuser{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+     
+      
+    }
+}
+@media (max-width: 968px) {
+   .shopping{
+
+  position: relative;
+  left: 0;
+  top: -44px;
+  font-size: 25px;
+   }
+   .shophome {
+    text-align: center;
+    width: 100%;
+   }
+
+    .toggle-button {
+        display: flex;
+    }
+ .style-info{
+    position: relative;
+    left: -10px;
+    top: -40px;
+    padding:0;
+    margin: 0;
+ }
+ 
+    .additionundeline:hover .underline{
+        background-color: blue;
+       display: none;
+      
+      
+      
+    }
+    
+
+
+    .shop,.additionundeline{
+        width: 100%;
+        margin: 0 auto;
+   
+        padding: 0;
+        margin: 10px 0;
+        border-top: 2px solid;
+      
+      
+        
+    }
+    .additionundeline a{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .shop,.additionundeline{
+        display: none;
+       
+     
+    }
+ 
+    .additionundeline.expanded,.shop.expanded{
+        display: flex;
+        
+        
+    }
+    .shop .number{
+    padding: 0;
+    margin: 0;
+ 
+   }
+  .icon{
+    font-size: 30px;
+    margin: 0;
+  }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        height: 100px;
+        transition: 1s;
+     
+        transition-timing-function: ease
+    
+    }
+    .header.expanded{
+        height: 450px;
+
+    }
+    .homeuser{
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+        width: 100%;
+          
+    }
+    .homeuser a{
+        text-decoration: none;
+        color:white;
+        width: 100%;
+       text-align: center;
+       
+      
+       
+    }
+    .home{
+        text-align: center;
+    }
+  
+    .styleonline{
+        width: 100%;
+    }
+    .sectionnav{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+ 
+ 
+ 
+
+    .header {
+     
+       padding: 50px 20px;
+    }
+}

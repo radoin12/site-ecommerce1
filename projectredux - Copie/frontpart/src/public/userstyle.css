@@ -1,0 +1,92 @@
+
+
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.allcomande .titles {
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    column-gap:10px;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+   padding-bottom: 20px;
+  
+
+}
+.allcomande .titles h2{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+   
+}
+.section .product{
+
+    display:flex;
+    justify-content: space-between;
+ 
+    margin-bottom: 50px;
+
+}
+.section .product .image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+   
+
+ 
+}
+.section .product {
+    padding-top: 20px;
+}
+.section .product img{
+    width: 150px;
+    max-width: 100%;
+    margin:50px ;
+    
+}
+.section .info-pro{
+    display: flex;
+    align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+   border-bottom: 2px solid;
+  
+}
+.mixte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.allcomande .summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+.allcomande .summary span{
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 20px;
+}
+.allcomande .summary p{
+    font-size: 25px;
+}
+.verifytitle{
+    text-align: center;
+    color: green;
+    margin: 50px 0;
+}
+.listproduct{
+    text-align: center;
+    margin-bottom: 50px;
+    color: blue;
+}

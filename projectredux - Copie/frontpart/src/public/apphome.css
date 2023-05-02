@@ -1,0 +1,411 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+
+.homeContainer{
+   
+    padding: 2rem 3rem;
+  
+   
+}
+
+.homeContainer .title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(7, 135, 92);
+    font-family: 'Nunito', sans-serif;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+
+
+}
+.homeContainer  .item{
+    flex-basis: 400px;
+
+     width: 500px;
+     max-width: 100%;
+    margin: 15px  ;
+    padding:  30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -5px -5px 10px rgb(100, 97, 97,0.4)
+    ,4px 4px 8px rgba(117, 87, 46, 0.3)
+    ;
+}
+.homeContainer img{
+    height: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0;
+}
+.item h3{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.item .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item .details .price{
+    font-size: 25px;
+    font-weight: 700;
+}
+.item .details .des{
+    font-size: 25px;
+    padding-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item .made{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.item .made p{
+    padding-left: 5px;
+}
+.item .made .contry{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.item .date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.item .date p{
+    padding-left: 5px;
+    font-size: 20px;
+}
+.item .date .creationdate{
+
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.item button{
+    margin-top: 10px;
+    background-color: rgb(44, 112, 196);
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1.15px;
+    color: white;
+}
+.item button:hover{
+    background-color: rgb(35, 109, 237);
+}
+
+/* cart item */
+
+
+.card-item .notfoundCard{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.card-item .notfoundCard a{
+    text-decoration: none;
+    color: blue;
+    padding-right: 5px;
+}
+
+.card-item{
+    padding: 20px 40px;
+}
+
+.card-item h2{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Nunito';
+    text-align: center;
+    color: rgb(9, 174, 185);
+
+}
+
+.card-item .span{
+   background-color: rgb(74, 10, 153);
+    width: 100px;
+    height: 2px;
+    margin: auto;
+}
+ .card-item .title{
+    margin: 30px 0px 5px 0;
+
+ }
+
+.card-item .title h3{
+ text-transform: uppercase;
+ font-size: 20px;
+ font-weight: 400;
+color: brown;
+
+}
+.info-product,.card-item .title{
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr 1fr;
+    column-gap:10px;
+    align-items: center;
+
+
+}
+.info-product{
+    border-top: 1px solid ;
+    padding: 2rem 0;
+}
+.card-item .title .product{
+    padding-left:5px ;
+}
+.card-item .title .total{
+padding-left: 20px;
+}
+
+.card-item .title .quantite{
+ padding-left: 20px;
+}
+.info-product .product-item{
+    display: flex;
+    align-items: center;
+}
+.info-product .product-item img{
+    width: 200px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+.info-product .product-item {
+    margin-right: 20px;
+}
+.info-product .quantity-item{
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   width: 150px;
+   max-width: 100%;
+   border: 0.5px solid rgb(138, 145, 186);
+   border-radius: 5px;
+
+}
+.info-product .quantity-item button{
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    font-weight: 400;
+    font-size: 25px;
+    background: none;
+}
+.info-product .quantity-item .count {
+  margin-top: 15px;
+}
+.info-product .product-item button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: rgb(8, 133, 45);
+    text-align: center;
+    padding: 5px 10px;
+    font-family: 'Nunito', sans-serif;
+    color: azure;
+    box-shadow: 2px 2px 5px rgb(14, 40, 0.4);
+}
+.info-product .product-item button:hover{
+    background-color: rgb(22, 108, 5);
+    
+}
+.info-product .total-item{
+justify-self: center;
+font-size: 25px;
+font-weight: 700;
+}
+.info-product .prix-item{
+    padding-left: 10px;
+    font-size: 25px;
+}
+/* cart summary */
+.summary{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid rgb(94, 97, 101);
+    padding-top: 20px;
+}
+.summary .clear-cart{
+    border: 0.5px solid rgb(44, 35, 35);
+    background: none;
+    border-radius: 5px;
+    width: 180px;
+   
+    outline: none;
+   
+    background-color: rgb(224, 224, 224);
+    box-shadow: 2px 2px 5px rgb(44, 35, 35,0.5);
+    font-weight: 400;
+    color: gray;
+    display:  flex;
+    align-items:center;
+  
+    letter-spacing: 1.17px;
+    padding: 10px;
+
+}
+.summary .clear-cart .delete{
+    padding-left: 5px;
+    color: red;
+    font-weight: 600;
+}
+.checkout{
+    width: 300px;
+    max-width: 100%;
+}
+.checkout .sub-total{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+.checkout .sub-total .total{
+    font-weight: 600;
+}
+.checkout p{
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px;
+    letter-spacing: 1.17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.checkout button{
+    outline: none;
+    padding: 5px 10px;
+    background-color: rgb(44, 112, 196);
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    color:white;
+    letter-spacing: 1.17px;
+    box-shadow: -3px -3px 6px rgba(26, 26, 27, 0.4),
+    3px 3px 6px rgba(33, 35, 40, 0.3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.checkout .verify{
+    background-color: rgb(244, 244, 109);
+    width: 160px;
+    padding: 5px 20px;
+    color: black;
+}
+
+
+.continueshop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:10px 0 ;
+}
+.continueshop a{
+ text-decoration: none;
+ font-size: 35px;
+ font-weight: 500;
+}
+.continueshop .icon{
+ color: blue;
+  font-size: 35px;
+  display:  flex;
+  align-items: center;
+ 
+}
+/* regester */
+.errorform p{
+    color: red;
+    text-align: center;
+    letter-spacing: '1.5px';
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+
+/* responsive home page */
+@media (max-width: 1400px) {
+    .homeContainer{
+       padding: 5px;
+       margin: 5px;
+    }
+    .homeContainer  .item{
+        flex-basis: 350px;
+    
+         width: 400px;
+         max-width: 100%;
+        margin: 10px  ;
+        padding:  10px ;
+       
+        ;
+    }
+  
+    
+    }
+
+@media (max-width: 1200px) {
+    .homeContainer{
+        padding: 10px
+    }
+    .products{
+        display: flex;
+        justify-content: center;
+      
+        margin-top: 2rem;
+    
+    
+    
+    }
+
+  
+    
+    }
+
+    @media (max-width: 800px) {
+        .homeContainer{
+            padding: 10px
+        }
+        .homeContainer  .item{
+            flex-basis: 100%;
+        
+            
+             max-width: 100%;
+         
+           
+            ;
+        }
+      
+      
+        
+        }
+    
+        
+
+    
